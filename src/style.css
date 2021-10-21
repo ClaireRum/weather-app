@@ -1,11 +1,7 @@
-.weather-app {
-  border: 1px solid #006ec5;
-  border-radius: 10px;
+body {
   font-family: "Comfortaa", cursive;
-  margin: 30px auto;
-  max-width: 800px;
-  padding: 20px;
 }
+
 h1 {
   color: #6c757d;
   font-size: 30px;
@@ -28,4 +24,37 @@ li {
   margin: 0;
   padding: 0;
   text-align: left;
+}
+
+.weather-app-wrapper {
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+.weather-app {
+  border: 1px solid #006ec5;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+.weather-temp img {
+  height: 64px;
+  margin-right: 5px;
+  width: 64px;
+}
+
+.weather-temp strong {
+  color: #006ec5;
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.weather-temp .unit {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
 }
