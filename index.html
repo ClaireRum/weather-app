@@ -29,10 +29,10 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>London</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Friday 15:00</li>
-              <li>Clear</li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="row">
@@ -44,15 +44,19 @@
                   class="float-left"
                 />
                 <div class="float-left">
-                  <strong>12</strong
+                  <strong id="temperature"></strong
                   ><span class="unit">°C | <a href="#">°F</a></span>
                 </div>
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Wind: 5mph</li>
-                <li>Humidity: 20%</li>
+                <li>
+                  Feels Like: <span id="feels-like"></span>°C |
+                  <a href="#">°F</a>
+                </li>
+                <li>Wind: <span id="wind"></span> Km/H</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
               </ul>
             </div>
           </div>
