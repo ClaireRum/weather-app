@@ -50,7 +50,7 @@ function displayTemp(response) {
 
 function search(city) {
   let apiKey = "15b6ba0523386a8a73b38b2440a74dea";
-  let apiURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiURL).then(displayTemp);
 }
 
