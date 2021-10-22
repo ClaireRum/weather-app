@@ -67,6 +67,7 @@ li:first-letter {
 .weather-temp .active {
   color: black;
   cursor: default;
+  text-decoration: none;
 }
 
 .weather-temp .active:hover {
