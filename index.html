@@ -30,7 +30,7 @@
         <div class="weather-app">
           <form id="search-form" class="mb-3">
             <div class="row">
-              <div class="col-10">
+              <div class="col-8">
                 <input
                   type="search"
                   placeholder="Enter a city.."
@@ -49,34 +49,39 @@
             </div>
           </form>
           <div class="overview">
-            <h1 id="city"></h1>
-            <ul>
-              <li>Last updated: <span id="date"></span></li>
-              <li id="description"></li>
-            </ul>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <div class="d-flex weather-temp">
-                <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                  id="icon"
-                  alt="Clear"
-                  class="float-left"
-                />
-                <div class="float-left">
-                  <strong id="temperature"></strong><span class="unit">°C</span>
+            <div class="row">
+              <div class="col-6">
+                <h1 id="city"></h1>
+                <ul class="today">
+                  <li>Last updated: <span id="date"></span></li>
+                </ul>
+                <br />
+                <ul class="additional">
+                  <li>Wind: <span id="wind"></span> Km/H</li>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <div class="d-flex weather-temp">
+                  <img
+                    src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                    id="icon"
+                    alt="Clear"
+                    class="float-left"
+                  />
+                  <div class="float-left">
+                    <strong id="temperature"></strong
+                    ><span class="unit">°C</span>
+                    <ul class="additional">
+                      <li id="description"></li>
+                      <li>Real feel: <span id="feels-like"></span>°C</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-6">
-              <ul>
-                <li>Real feel: <span id="feels-like"></span>°C</li>
-                <li>Wind: <span id="wind"></span> Km/H</li>
-                <li>Humidity: <span id="humidity"></span>%</li>
-              </ul>
-            </div>
           </div>
+          <hr />
           <div class="weather-forecast" id="forecast"></div>
         </div>
         <small>
